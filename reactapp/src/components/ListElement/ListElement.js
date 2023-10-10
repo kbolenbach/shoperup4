@@ -1,6 +1,6 @@
 export const ListElement = ({children}) => {
 
-  const handleClick = () => {
+  const handleClick = ({children}) => {
     console.log(children);
   }
 
