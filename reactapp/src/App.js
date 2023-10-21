@@ -1,13 +1,12 @@
-import { Header } from './components/header/Header';
-import { Header2 } from './components/header/Header';
-import { Footer } from './components/footer/Footer.js';
+import { UnorderedList } from './components/UnorderedList/UnorderedList';
+import { ListElement } from './components/ListElement/ListElement';
+
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Header2 />
-      <Footer />
+      <UnorderedList arrayElements={["Alaa", "ma", "kota", "a", "ja", "nie"]}/>
+      
     </div>
   );
 }
