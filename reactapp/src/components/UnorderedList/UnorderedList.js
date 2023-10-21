@@ -1,8 +1,10 @@
+import { ListElement } from "../ListElement/ListElement";
+
 export const UnorderedList = ({arrayElements}) => {
     return (
       <ul>
         {arrayElements.map((element, index) =>
-          <li key={`elem-${index}`} onClick={() => console.log(element)}>{element}</li>
+          <ListElement key={`elem-${index}`}>{element}</ListElement>
         )}
       </ul>
     )};

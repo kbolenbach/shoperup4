@@ -1,7 +1,8 @@
+
 export const ListElement = ({children}) => {
 
-  const handleClick = ({children}) => {
-    console.log(children);
+  const handleClick = () => {
+    console.log('element listy:', children);
   }
 
   return (
