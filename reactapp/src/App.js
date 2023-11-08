@@ -5,7 +5,9 @@ import { ListElement } from './components/ListElement/ListElement';
 function App() {
   return (
     <div className="App">
-      <UnorderedList arrayElements={["Alaa", "ma", "kota", "a", "ja", "nie"]}/>
+      <UnorderedList>
+        <ListElement />
+      </UnorderedList>
       
     </div>
   );
