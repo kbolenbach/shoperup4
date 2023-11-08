@@ -4,28 +4,20 @@ import { useState, useEffect } from "react";
 export const ListElement = ({children}) => {
 
   const [ pageTitle, setPageTitle ] = useState('');
-  const [ changeClass, setChangeClass ] = useState('');
-  // const [ removeClass, setRemoveClass ] = useState('mark-as-read');
+  const [ isActive, setIsActive ] = useState('');
 
 
   const handleOnClick = (event) => {
     setPageTitle(event.target.innerText);
-    setChangeClass('mark-as-read');
-    // setRemoveClass = () => {
-    //   if(removeClass === 'mark-as-read'){
-    //     removeClass = ' '
-    //   } else {
-    //     removeClass = 'mark-as-read'
-    //   }
-    // }
+    setIsActive(isActive ? '' : 'mark-as-read');
   }
 
   useEffect(() => {
     document.title = `${pageTitle}`;
-  });
+  }, [ pageTitle ]);
 
   return (
-    <li className={changeClass} onClick={handleOnClick}>
+    <li className={isActive} onClick={handleOnClick}>
       {children}
     </li>
   );
