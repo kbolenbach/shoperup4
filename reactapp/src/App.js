@@ -1,17 +1,16 @@
-import { UnorderedList } from './components/UnorderedList/UnorderedList';
-import { ListElement } from './components/ListElement/ListElement';
+import { ThemeContextProvider } from './context/theme-context-provider.js';
+import { RouterProvider } from 'react-router-dom';
+import { ROUTER_ROUTES } from "./pages/routing.js";
+
 
 
 function App() {
   return (
-    <div className="App">
-      <UnorderedList>
-        <ListElement />
-      </UnorderedList>
-      
-    </div>
+
+    <ThemeContextProvider>
+        <RouterProvider router={ROUTER_ROUTES}/>
+    </ThemeContextProvider>
   );
 }
 
 export default App;
-
