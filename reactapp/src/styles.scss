@@ -1,0 +1,110 @@
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+.page-header {
+    font-size: 12px;
+    
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(243, 243, 243); 
+    border-radius: 4px;
+    align-items: baseline;
+}
+
+
+.page-header-nav {
+    
+    border-radius: 4px; 
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+    align-items: baseline;
+    
+    margin-bottom: 5px;
+}
+
+.page-header-input {
+    width: 80%;
+}
+
+.btn{
+    border: 1px solid rgb(128, 128, 128);
+    border-radius: 4px;
+    padding: 10px 15px;
+    height: 35px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin: 8px;
+}
+
+.clear-btn {
+    background-color: #dc3545; 
+}
+
+.add-to-list-btn {
+    background-color:#198754;
+    width: 88px;   
+}
+
+.add-to-basket-btn {
+    background-color:#198754;
+    
+}
+
+.delete-btn {
+    background-color: #dc3545;
+}
+
+.page-header-input {
+    border-radius: 4px;
+    border: 1px solid gray;
+    height: 35px;
+}
+
+.page-header-input:focus {
+    border-color: #3c4fe0;
+}
+
+.main-page-product-list {
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-radius: 4px;
+    background-color: rgb(243, 243, 243);
+    padding-left: 10px;
+    
+    
+}
+
+.list-element {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.main-page-footer {
+    border-radius: 4px;
+    background-color: rgb(243, 243, 243); 
+    
+}
+
+.main-page-footer-item {
+    border-radius: 4px;
+    background-color: rgb(182, 243, 206);
+    max-width: 150px;
+    margin-left: auto;
+    display: flex;
+    
+}
+.main-page-footer-item p {
+    padding-left: 10px;
+}
+
+.counter {
+    border-radius: 4px; 
+}
